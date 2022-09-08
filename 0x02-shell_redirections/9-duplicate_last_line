@@ -1,2 +1,2 @@
 #!/bin/bash
-indicate that events have passed a point of no return.
+tail -1 iacta >> iacta
