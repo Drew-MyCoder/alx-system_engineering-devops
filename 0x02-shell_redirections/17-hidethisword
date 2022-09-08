@@ -1,14 +1,2 @@
 #!/bin/bash
-/etc/passwd:sys:x:3:3:sys:/dev:/usr/sbin/nologin
-/etc/passwd:man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
-/etc/passwd:lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
-/etc/passwd:mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
-/etc/passwd:news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
-/etc/passwd:uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
-/etc/passwd:www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
-/etc/passwd:backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
-/etc/passwd:list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
-/etc/passwd:irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
-/etc/passwd:gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
-/etc/passwd:systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
-/etc/passwd:mysql:x:106:107:MySQL Server,,,:/var/lib/mysql/:/bin/false
+grep -i -v "bin" /etc/passwd
