@@ -1,0 +1,20 @@
+There are many processes that take place before you see output on your browser after typing a URL like "https://www.google.com" and pressing the enter key.
+
+Fortunately, all of these events take place in the space of a single instant, so you hardly give them any thought. Let me give you a brief summary of everything that occurs in those few microseconds before I go into depth about each of the specific steps involved.
+
+The domain name system (DNS) server, which acts as an address book for all domain names, receives a request from your computer. The precise IP address of the server that https://www.google.com points to is then sent back in response to this.
+
+Once your computer is aware of this IP, it uses the IP address to connect to the server. Your computer can create this connection using the Internet Protocol (IP), and it is known as the Transmission Control Protocol (TCP). The term "handshake" refers to the entire transaction.
+When a firewall is present on your computer, it first verifies that the request you are making is authorized before granting it. Before you may eventually connect to the server, a similar check will be made to see if the server you are attempting to contact is likewise protected by a firewall.
+
+Your browser now sends a request for the webpage using an encryption protocol, such as Secure Sockets Layer (SSL) or Transport Layer Security (TLS), to encrypt the data that will be shared between your machine and the server after the connection has been established. The "s" in "https" denotes this form of encryption and also suggests that the connection is secure.
+
+Companies like Google that experience significant traffic maintain a number of servers, and they also have a load balancer that receives the majority of requests and routes them to a certain server. As a result, the load balancer will get the request from your browser first and route it to a certain server in accordance with the load balancer's algorithm.
+
+The load balancer also delivers the response back to your browser after receiving it from the server once it processes the request. Mostly the HTML, CSS, and JavaScript files that make up Google's homepage are included in this answer.
+
+The HTML files that are returned instruct the browser on how to display the page's content. While the JavaScript file adds interaction to the page, the CSS file instructs the browser on how to style the content.
+
+The web server will ask the application server, which may then ask a database server for some data to be obtained and sent back to the web server, if any dynamic content is required, such as Google search results. The answer that the web server delivers back to the browser will then include these.
+
+The browser will finally render the page and show it to you.
